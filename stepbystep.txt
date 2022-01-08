@@ -1,0 +1,11 @@
+#clonando projeto limpo no github
+git clone https://github.com/devtiagoabreu/gestaoCondomino.git .
+
+#criando projeto laravel dentro da pasta do projeto clonado
+laravel new api
+
+#iniciar o servidor php para testar código inicial
+php artisan serve
+
+#testando requisição GET 
+http://localhost:8000/api/ping
