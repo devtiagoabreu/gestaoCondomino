@@ -1,3 +1,5 @@
+#2: Criando o projeto
+------------------------------------------------------------------------------------------------------
 #criando chave SSH para o github
 ssh-keygen -t rsa -b 4096 -C "devtiagoabreu@gmail.com"
 dúvidas acesse: https://www.youtube.com/watch?v=7YVQLZp1jb0&ab_channel=WillianJustenCursos
@@ -13,3 +15,19 @@ php artisan serve
 
 #testando requisição GET 
 http://localhost:8000/api/ping
+-------------------------------------------------------------------------------------------------------
+
+#3: Configurando o JWT
+-------------------------------------------------------------------------------------------------------
+#Documentação
+https://jwt-auth.readthedocs.io/en/develop/
+
+#Install via composer
+composer require tymon/jwt-auth
+-obs se ocorrer erro tente
+composer require tymon/jwt-auth --ignore-platform-reqs
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+php artisan jwt:secret
+
+
+
