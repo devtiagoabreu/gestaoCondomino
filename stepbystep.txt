@@ -1,3 +1,7 @@
+#criando chave SSH para o github
+ssh-keygen -t rsa -b 4096 -C "devtiagoabreu@gmail.com"
+dúvidas acesse: https://www.youtube.com/watch?v=7YVQLZp1jb0&ab_channel=WillianJustenCursos
+
 #clonando projeto limpo no github
 git clone https://github.com/devtiagoabreu/gestaoCondomino.git .
 
